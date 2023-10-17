@@ -14,14 +14,19 @@ int second = number / 1000 % 10;
 int fifth = number % 10;
 int four = number % 100 / 10;
 
+if (number > 100000 || number < 9999)
+    System.Console.WriteLine("Число не пятизначное");
+
 if (first == fifth && second == four)
 {
     System.Console.WriteLine("Thats Palindromeeee!!!");
+
 }
-else
+
+else if ((number < 100000 || number > 9999) && (first != fifth || second != four))
 {
     System.Console.WriteLine("Thats  NOT Palindromeeee!!!");
 }
 
-if (number > 100000 || number < 9999)
-    System.Console.WriteLine("Число не пятизначное");
+
+
