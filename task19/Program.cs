@@ -17,7 +17,7 @@ int four = number % 100 / 10;
 if (number > 100000 || number < 9999)
     System.Console.WriteLine("Число не пятизначное");
 
-if (first == fifth && second == four)
+else if (first == fifth && second == four)
 {
     System.Console.WriteLine("Thats Palindromeeee!!!");
 
